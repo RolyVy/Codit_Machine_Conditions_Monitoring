@@ -35,7 +35,6 @@ The implementation of this model can allow the clients to operate the manufactur
 
 ## Repository
 
-
 **README.md**
   - has all the necessary information regarding the project
 
@@ -98,26 +97,59 @@ The implementation of this model can allow the clients to operate the manufactur
 **Models Creation folder**
   - this is where all the jupyter notebooks to create the models are saved 
   - this has 4 files namely:
+
+
       1. **fan_features.ipynb**
           - the jupyter notebook to create the model for Fan machines
+
+
       2. **pump_features.ipynb**
           - the jupyter notebook to create the model for Pump machines
+
+
       3. **slider_features.ipynb**
           - the jupyter notebook to create the model for Slider machines
+
+
       4. **valve_features.ipyn**
           - the jupyter notebook to create the model for Valve machines
           
-
 
 
 ______________________________________________________________________________________________________________________________________________________
 
 ## Libraries Used For This Project
 
+
+**Librosa** https://librosa.org/doc/latest/index.html
+  - Librosa is a python package for music and audio analysis. It provides the building blocks necessary to create music information retrieval systems.
+  - In this project, librosa is used to extract the features of the sound files.
+
+
+**Sci-kit Learn** https://scikit-learn.org/stable/
+  - Sci-kit learn is a simple and efficient tools for predictive data analysis.
+  - In this project, sci-kit learn is used to create the models.
+
+
+**Pickle** https://docs.python.org/3/library/pickle.html
+  - The pickle module implements binary protocols for serializing and de-serializing a Python object structure. 
+  - In this project, pickle is used to save and read the models in a `sav` format.
+
+
 **Pandas** https://pypi.org/project/pandas/
   - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
 built on top of the Python programming language.
   - In this project, pandas is used to read the csv files as a dataframe.
+
+
+**Numpy** https://numpy.org/
+  - Numpy is the fundamental package for scientific computing with Python.
+  - In this project, numpy is used to get the mean, min, max and std of an array in the features.
+
+
+**OS** https://docs.python.org/3/library/os.html
+  - This module provides a portable way of using operating system dependent functionality.
+  - In this project, OS is used to get the list of directories in a file path.
 
 
 **Time** https://docs.python.org/3/library/time.html
