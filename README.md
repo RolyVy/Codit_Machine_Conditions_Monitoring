@@ -169,5 +169,5 @@ ________________________________________________________________________________
 ## Pending...
   - 
 
-![Thank you](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fthank-you-gifs&psig=AOvVaw37c7MPAx5JVbwkzQKjBZcq&ust=1617376602951000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjv_sSr3e8CFQAAAAAdAAAAABAD)
+![Thank you](https://static.euronews.com/articles/320895/560x315_320895.jpg?1452514624)
 ### Thank you for reading. Have fun with the code!
