@@ -71,11 +71,12 @@ def predict(df, model: str) -> int:
         return 0
     
     
-def results(pred, count, machine_type):
+def results(pred: Dict[str, int], file_path: str, count: int, machine_type: str):
     now = datetime.now()
     date = now.strftime("%d/%m/%Y %H:%M:%S")
     result = {
         'Type of Machine': machine_type,
+        'File Path' : file_path,
         'Date and Time' : date,
         'Predictions' : pred,
         'Total Anomalies' : anomalies
@@ -84,7 +85,40 @@ def results(pred, count, machine_type):
     with open(f'Demo/Test_Predictions_output/{machine_type}_result.json', 'w') as json_file:
         json.dump(result, json_file)
         print("Results are now in your file!")
-    
+   
+
+def get_prediction(dict_files: Dict[str,str], model: str) -> Dict[str, int]:
+    """
+    Function to get the prediction of the files
+    :parameter dict_files will contain the file paths 
+    :parameter model will contain the specified model for prediction
+    :attrib pred will contain a dictionary with the prediction
+    This function will return the prediction in a dictionary
+
+    """
+    pred = {}
+    for key, value in dict_files.items(): 
+        print(value)           
+        data = Features.get_features(value)
+        df = pd.DataFrame([data])
+        print(f"Predicting for {key}...")
+        prediction = predict(df, model) 
+        pred[key] = prediction     
+    return pred
+
+
+def count_anomalies(pred: Dict[str, int]) -> int:
+    """
+    Function to calculate the anomalies in the prediction
+    :parameter pred contains the prediction in a dictionary format
+    :attrib count will contain the total number of anomalies
+    This function returns the count as in integer
+    """
+    count = 0 
+    for i in pred.values():
+        if i == 1:
+            count +=1
+    return count
 
 
 """
@@ -104,21 +138,9 @@ machine_type = input("Enter the machine type: ")
 file_path = input("Enter the file path: ")
 start_time = time.time()
 model = machine(machine_type)
-        
 dict_files = get_files(file_path)
-pred = {}
-for key, value in dict_files.items(): 
-    print(value)           
-    data = Features.get_features(value)
-    df = pd.DataFrame([data])
-    print(f"Predicting for {key}...")
-    prediction = predict(df, model) 
-    pred[key] = prediction
-    
-count = 0 
-for i in pred.values():
-    if i == 1:
-        count +=1
+pred = get_prediction(dict_files, model)
+count = count_anomalies(pred)
         
 anomalies = str(count) +  " out of " + str(len(pred.values())) + " samples."
 print(f"Predicted Anomalies: {anomalies}")
