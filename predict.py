@@ -5,6 +5,9 @@ import time
 import pickle
 from os import listdir
 from typing import Dict
+import json
+from datetime import datetime
+
 
 
 def get_files(file_path: str) -> Dict[str, str]:
@@ -67,6 +70,21 @@ def predict(df, model: str) -> int:
         print("Machine is Normal.")
         return 0
     
+    
+def results(pred, count, machine_type):
+    now = datetime.now()
+    date = now.strftime("%d/%m/%Y %H:%M:%S")
+    result = {
+        'Type of Machine': machine_type,
+        'Date and Time' : date,
+        'Predictions' : pred,
+        'Total Anomalies' : anomalies
+        }
+
+    with open(f'Demo/Test_Predictions_output/{machine_type}_result.json', 'w') as json_file:
+        json.dump(result, json_file)
+        print("Results are now in your file!")
+    
 
 
 """
@@ -101,8 +119,10 @@ count = 0
 for i in pred.values():
     if i == 1:
         count +=1
-
-print(f"Predicted: {count} / {len(pred.values())}")
+        
+anomalies = str(count) +  " out of " + str(len(pred.values())) + " samples."
+print(f"Predicted Anomalies: {anomalies}")
+results(pred, anomalies, machine_type)
 end_time = time.time()
 print(f"Program runs for {end_time - start_time} seconds.")
     
