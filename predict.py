@@ -71,7 +71,15 @@ def predict(df, model: str) -> int:
         return 0
     
     
-def results(pred: Dict[str, int], file_path: str, count: int, machine_type: str):
+def results(pred: Dict[str, int], file_path: str, anomalies: str, machine_type: str):
+    """
+    Function to get the results and save it as a json file
+    :parameter pred contains the prediction in a dictionary format
+    :parameter file_path contains the file path of the folder
+    :parameter anomalies contains the number of anomalies
+    :parameter machine_type contains the type of machine
+    It creates a json file and saves the json file in the Test_Predictions_Output
+    """
     now = datetime.now()
     date = now.strftime("%d/%m/%Y %H:%M:%S")
     result = {
@@ -144,7 +152,7 @@ count = count_anomalies(pred)
         
 anomalies = str(count) +  " out of " + str(len(pred.values())) + " samples."
 print(f"Predicted Anomalies: {anomalies}")
-results(pred, anomalies, machine_type)
+results(pred, file_path, anomalies, machine_type)
 end_time = time.time()
 print(f"Program runs for {end_time - start_time} seconds.")
     
