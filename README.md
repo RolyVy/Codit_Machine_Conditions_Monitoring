@@ -11,7 +11,6 @@ ________________________________________________________________________________
 - Coding Bootcamp: `Becode  Artificial Intelligence (AI) Bootcamp`
 
 
-
 ## Mission objectives
 
 - Be able to work and process data from audio format
@@ -25,6 +24,7 @@ ________________________________________________________________________________
   customer's requirements
 - Define the strengths and limitations of the model
 
+__________________________________________________________________________________________________________________________________________________
 
 ## About The Repository
 
@@ -32,7 +32,6 @@ This is a project about developing a machine learning model that is able to moni
 
 The implementation of this model can allow the clients to operate the manufacturing equipment at full capacity and detect signs of failure before the damage is so critical that the production line has to be stopped.
 
-__________________________________________________________________________________________________________________________________________________
 
 ## Repository
 
@@ -40,6 +39,36 @@ ________________________________________________________________________________
 **README.md**
   - has all the necessary information regarding the project
 
+**predict.py**
+  - python program that will predict the sound file if there is anomaly or not
+
+**features.py**
+  - python program that contains all the function to get the features of the sound files
+
+**preprocessing.py**
+  - python program that will get all the features of the sound files
+
+**create_csv.py**
+  - python program that will create a dataframe with all the file paths of the sound files
+
+**Datasets folder**
+  - this has 4 files namely:
+      1. **fan_full_features.csv**
+          - a csv file containing the all the features extracted for the sound files of fan machines
+      2. **pump_full_features.csv**
+          - a csv file containing the all the features extracted for the sound files of pump machines
+      1. **slider_full_features.csv**
+          - a csv file containing the all the features extracted for the sound files of slider machines
+      2. **valve_full_features.csv**
+          - a csv file containing the all the features extracted for the sound files of valve machines
+
+**Models folder**
+  - this has 4 files namely:
+      1. **fan_model.sav**
+          - the machine learning model created for Fan machines
+      1. **fan_model.sav**
+          - the machine learning model created for Fan machines
+          - 
 
 
 ______________________________________________________________________________________________________________________________________________________
