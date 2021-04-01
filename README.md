@@ -169,5 +169,5 @@ ________________________________________________________________________________
 ## Pending...
   - 
 
-![Thank you](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dz36IzZ9Z8V0&psig=AOvVaw3QqMSY2RRrzxGkryVye92y&ust=1617398572313000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDfwK393e8CFQAAAAAdAAAAABAT)
+![Thank you](https://static.euronews.com/articles/320895/560x315_320895.jpg?1452514624)
 ### Thank you for reading. Have fun with the code!
