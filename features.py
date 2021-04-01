@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 import librosa
-from Typing import Dict
+from typing import Dict
 
 class Features:
     """

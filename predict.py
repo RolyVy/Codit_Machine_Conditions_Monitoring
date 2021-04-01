@@ -29,16 +29,16 @@ def machine(machine_type: str) ->str:
     :parameter machine_type will contain the type of machine
     """
     if machine_type.lower() == "fan":
-        model = "models/fan/fan_full_with_smote_89P-89R-89F1.sav"
+        model = "Models/fan_model.sav"
         return model
     elif machine_type.lower() == "valve":
-        model = ""
+        model = "Models/valve_model.sav"
         return model
     elif machine_type.lower() == "pump":
-        model = ""
+        model = "Models/pump_model.sav"
         return model
     elif machine_type.lower() == "slider":
-        model = ""
+        model = "Models/slider_model.sav"
         return model
 
 
