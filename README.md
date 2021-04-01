@@ -26,33 +26,48 @@ ________________________________________________________________________________
 - Define the strengths and limitations of the model
 
 
-## The Mission
+## About The Repository
 
-Acme Corporation is a worldwide supplier of technological equipment. The factory is facing significant problems with their manufacturing line, the machines are constantly facing failures due to a lack of maintenance and the production is stopped every time an unexpected failure is presented. As a result, Acme is losing millions of U.S Dollars and important clients like Wile E. Coyote are experiencing delays in deliveries. 
+This is a project about developing a machine learning model that is able to monitor the operations and identify anomalies audio sounds of the equipment.
 
-The company has collected audio samples of equipment working on normal and anomalous conditions. Their objective is to develop a machine learning model able to monitor the operations and identify anomalies in the sound pattern.
+The implementation of this model can allow the clients to operate the manufacturing equipment at full capacity and detect signs of failure before the damage is so critical that the production line has to be stopped.
 
-The implementation of this model can allow Acme to operate the manufacturing equipment at full capacity and detect signs of failure before the damage is so critical that the production line has to be stopped.
+__________________________________________________________________________________________________________________________________________________
 
-Your mission is to build a machine learning model for Acme so they can continue their manufacturing activities and help the Coyote to catch the roadrunner.
+## Repository
 
-![ACME (GIF)](https://media.giphy.com/media/UjnsYcfFRZDm8/giphy.gif)
 
-### Must-have features
+**README.md**
+  - has all the necessary information regarding the project
 
-- Explanatory graphics of insights found in data
-- Implementation of machine learning models according with the client's requirements
-- The performance metrics of the model must be clearly defined.
-- Evaluation of the model's performance and definition of its limitations
 
-### Miscellaneous information
 
-The dataset can be downloaded on the following link:
+______________________________________________________________________________________________________________________________________________________
 
-- [Machine Condition Monitoring](https://zenodo.org/record/3384388#.YFIrNXnvJEY)
+## Libraries Used For This Project
 
-Sound is best analysed with spectrograms, more specifically MelSpectograms. A good explanation can be found here: 
+**Pandas** https://pypi.org/project/pandas/
+  - Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+built on top of the Python programming language.
+  - In this project, pandas is used to read the csv files as a dataframe.
 
-[Mel Spectograms](https://medium.com/analytics-vidhya/understanding-the-mel-spectrogram-fca2afa2ce53)
 
-A Recommended Python library to work with Mel spectrograms is ***Librosa***.
+**Time** https://docs.python.org/3/library/time.html
+  - Time module handles time-related tasks.
+  - In this project, time is used to calculate the total time the code runs.
+
+
+**Typing** https://docs.python.org/3/library/typing.html
+  - Typing defines a standard notation for Python function and variable type annotations.
+  - In this project, typing is used to help document the code properly.
+
+______________________________________________________________________________________________________________________________________________________
+
+## Clone/Fork Repository
+  - If you wish to clone/fork this repository, you can just click on the repository, then click the Clone/fork button and follow the instructions.
+
+## Pending...
+  - 
+
+
+### Thank you for reading. Have fun with the code!
