@@ -11,7 +11,7 @@ ________________________________________________________________________________
 - Coding Bootcamp: `Becode  Artificial Intelligence (AI) Bootcamp`
 
 
-## Mission objectives
+### Mission Objectives
 
 - Be able to work and process data from audio format
 - Find insights from data, build hypothesis and define conclusions
@@ -52,23 +52,62 @@ The implementation of this model can allow the clients to operate the manufactur
   - python program that will create a dataframe with all the file paths of the sound files
 
 **Datasets folder**
+  - this is where all the datasets are saved
   - this has 4 files namely:
+
       1. **fan_full_features.csv**
           - a csv file containing the all the features extracted for the sound files of fan machines
+
+
       2. **pump_full_features.csv**
           - a csv file containing the all the features extracted for the sound files of pump machines
-      1. **slider_full_features.csv**
+
+
+      3. **slider_full_features.csv**
           - a csv file containing the all the features extracted for the sound files of slider machines
-      2. **valve_full_features.csv**
+
+
+      4. **valve_full_features.csv**
           - a csv file containing the all the features extracted for the sound files of valve machines
 
+
+
 **Models folder**
+  - this is where all the models are saved
   - this has 4 files namely:
+
+
       1. **fan_model.sav**
           - the machine learning model created for Fan machines
-      1. **fan_model.sav**
-          - the machine learning model created for Fan machines
-          - 
+
+
+      2. **pump_model.sav**
+          - the machine learning model created for Pump machines
+
+
+      3. **slider_model.sav**
+          - the machine learning model created for Slider machines
+
+
+      4. **valve_model.sav**
+          - the machine learning model created for Valve machines
+
+
+     
+   
+**Models Creation folder**
+  - this is where all the jupyter notebooks to create the models are saved 
+  - this has 4 files namely:
+      1. **fan_features.ipynb**
+          - the jupyter notebook to create the model for Fan machines
+      2. **pump_features.ipynb**
+          - the jupyter notebook to create the model for Pump machines
+      3. **slider_features.ipynb**
+          - the jupyter notebook to create the model for Slider machines
+      4. **valve_features.ipyn**
+          - the jupyter notebook to create the model for Valve machines
+          
+
 
 
 ______________________________________________________________________________________________________________________________________________________
