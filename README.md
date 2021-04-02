@@ -115,7 +115,8 @@ The implementation of this model can allow the clients to operate the manufactur
           - the jupyter notebook to create the model for Valve machines
           
 
-
+**Demo  folder**
+  - this is where our demo are saved for our model 
 ______________________________________________________________________________________________________________________________________________________
 
 ## Libraries Used For This Project
